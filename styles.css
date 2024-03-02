@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+
+  .image-container {
+    width: 300px; /* Justera bredden vid behov */
+    height: 500px; /* Justera höjden vid behov */
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+
+  .image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .image-container:hover img {
+    transform: scale(1.05);
+  }
+
+  .button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .button:hover {
+    background-color: #00ff08;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .code-input {
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh; /* Make sure the background covers the whole viewport */
+    background-color: #f0f0f0; /* Set your desired background color */
+    background-image: url('./images/1705969302087.jpg'); /* Set your desired background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+  }
+
+  .orange-stripe {
+    background-color: orange;
+    height: 700px; /* Adjust the height as needed */
+    width: 100%; /* Take up the full width of the viewport */
+    position: absolute;
+    top: 50%; /* Position in the middle vertically */
+    transform: translateY(-50%);
+    z-index: -1; /* Set a lower z-index to position it behind other elements */
+  }
+
+  .error-message {
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: none;
+    z-index: 2; /* Set a higher z-index to position it above other elements */
+  }
+
+  .loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    display: none;
+  }
